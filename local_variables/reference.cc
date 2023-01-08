@@ -1,15 +1,16 @@
 #include <iostream>
 
-using namespace std;
-
-void func(int& y) {          // y will be a reference to the caller's variable x
-    cout << "Address of y is " << &y << endl;
+void func(int &y)
+{ // y will be a reference to the caller's variable x
+	std::cout << "Address of y is " << &y << "\n";
 	y = 1;
 }
 
-int main() {
+int main()
+{
 	int x = 2;
-	cout << "Address of x is " << &x << endl;
-	func(x);                          // x will now have the value 1
-	cout << "After calling func(), x = " << x << endl;
+	std::cout << "Before calling func(), x = " << x << "\n";
+	std::cout << "Address of x is " << &x << "\n";
+	func(x); // x will now have the value 1
+	std::cout << "After calling func(), x = " << x << "\n";
 }
