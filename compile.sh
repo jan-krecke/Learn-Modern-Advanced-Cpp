@@ -8,4 +8,5 @@ dir=$(dirname "$cpp_file")
 filename=$(basename "$cpp_file")
 
 # Use clang++ to compile the cpp file and store the executable in the target directory
+mkdir -p "target/$dir"
 clang++ "$cpp_file" -o "target/$dir/${filename%.*}"
