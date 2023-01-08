@@ -4,14 +4,15 @@
 using namespace std;
 
 class Test {
-	int i{42};
-	string str;
-public:
-	operator int() const { return i; } 
+  int i{42};
+  string str;
+
+ public:
+  operator int() const { return i; }
 };
 
 int main() {
-	Test test;
-	int x = test + 5;
-	cout << x << endl;
+  Test test;
+  int x = test + 5;
+  cout << x << endl;
 }

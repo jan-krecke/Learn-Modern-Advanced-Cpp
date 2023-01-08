@@ -2,15 +2,13 @@
 #include <string>
 
 namespace product {
-	#include "version1.h"
-	#include "version2.h"
-	
-	void test() {
-		refrigerator fridge;
-		fridge.print();
-	}
-}
+#include "version1.h"
+#include "version2.h"
 
-int main() {
-	product::test();
+void test() {
+  refrigerator fridge;
+  fridge.print();
 }
+}  // namespace product
+
+int main() { product::test(); }

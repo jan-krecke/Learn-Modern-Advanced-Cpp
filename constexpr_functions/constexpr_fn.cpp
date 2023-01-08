@@ -16,6 +16,6 @@ double dist2 = miles_to_km(arg);
 // The return value is not a constant expression
 // The return value is required to be a constant expression
 // Error!
-//constexpr double dist4 = miles_to_km(arg);
+// constexpr double dist4 = miles_to_km(arg);
 
 int main() {}

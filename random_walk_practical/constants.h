@@ -6,4 +6,4 @@ struct constants {
   static constexpr int window_height{600};
 };
 
-#endif // CONSTANTS_H
+#endif  // CONSTANTS_H

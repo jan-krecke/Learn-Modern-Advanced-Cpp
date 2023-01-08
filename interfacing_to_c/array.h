@@ -3,4 +3,4 @@
 
 int array_print(int arr[], int n);
 
-#endif //ARRAY_H
+#endif  // ARRAY_H

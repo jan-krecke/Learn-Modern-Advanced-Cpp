@@ -3,11 +3,10 @@
 using namespace std;
 
 class Test {
-	int i;
-	public:
-	explicit Test(int i) : i(i) {}
+  int i;
+
+ public:
+  explicit Test(int i) : i(i) {}
 };
 
-int main() {
-	Test test = 4;
-}
+int main() { Test test = 4; }

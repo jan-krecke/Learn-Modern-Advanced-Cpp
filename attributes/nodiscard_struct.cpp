@@ -2,13 +2,11 @@
 
 // Nodiscard type
 // All functions which return Test are nodiscard
-struct [[nodiscard]] Test {};
+struct [[nodiscard]] Test{};
 
 // Function whose return value should not be ignored
-Test func() {
-	return Test{};
-}
+Test func() { return Test{}; }
 
 int main() {
-	func();  // Call func and ignore its returned value
+  func();  // Call func and ignore its returned value
 }

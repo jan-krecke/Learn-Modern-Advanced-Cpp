@@ -8,7 +8,8 @@
 class cell {
   // Cell status
   bool alive;
-public:
+
+ public:
   // Constructor
   // Cells are empty by default
   cell() : alive(false) {}
@@ -17,16 +18,12 @@ public:
   void draw(int row, int col) const;
 
   // Bring cell to life
-  void create() {
-    alive = true;
-  }
-  
+  void create() { alive = true; }
+
   // End cell's life
-  void erase() {
-    alive = false;
-  }
-  
+  void erase() { alive = false; }
+
   bool is_alive() const { return alive; }
 };
 
-#endif //CELL_H_
+#endif  // CELL_H_

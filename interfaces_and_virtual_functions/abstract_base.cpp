@@ -1,24 +1,24 @@
 #include <iostream>
-#include <vector>
 #include <memory>
+#include <vector>
 
 using namespace std;
 
 class Shape {
-public:
-    virtual void draw() const = 0;       // Pure virtual function
+ public:
+  virtual void draw() const = 0;  // Pure virtual function
 };
 
 class Circle : public Shape {
-public:
-    void draw() const override { cout << "Drawing a Circle...\n"; }
+ public:
+  void draw() const override { cout << "Drawing a Circle...\n"; }
 };
 
 class Triangle : public Shape {
-public:
-    void draw() const override { cout << "Drawing a Triangle...\n"; }
+ public:
+  void draw() const override { cout << "Drawing a Triangle...\n"; }
 };
 
 int main() {
-	Shape shape;                          // Does not compile - cannot create variable of abstract type
+  Shape shape;  // Does not compile - cannot create variable of abstract type
 }
