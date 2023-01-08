@@ -4,29 +4,32 @@
 using namespace std;
 
 class String {
-	string s;
-public:
-	// Constructors
-	String(): s("") {}
-	String(const string& s): s(s) {}
+  string s;
 
-	// Copy constructor
-	String(const String& arg): s(arg.s) {}
+ public:
+  // Constructors
+  String() : s("") {}
+  String(const string& s) : s(s) {}
 
-	// Assignment Operator
-	String& operator =(const String& arg) {
-		s = arg.s;
-		return *this;
-	}
+  // Copy constructor
+  String(const String& arg) : s(arg.s) {}
 
-	void print() { cout << s << endl; }
+  // Assignment Operator
+  String& operator=(const String& arg) {
+    s = arg.s;
+    return *this;
+  }
+
+  void print() { cout << s << endl; }
 };
 
 int main() {
-	String w{"world"};
-	String bang{"bang"};
-	bang = w;
+  String w{"world"};
+  String bang{"bang"};
+  bang = w;
 
-	cout << "w = "; w.print();
-	cout << "bang = "; bang.print();
+  cout << "w = ";
+  w.print();
+  cout << "bang = ";
+  bang.print();
 }

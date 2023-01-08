@@ -1,22 +1,21 @@
 #include <algorithm>
-#include <string>
 #include <iostream>
+#include <string>
 #include <vector>
 
 using namespace std;
 
 int main() {
-	vector<string> names ={"Dilbert", "PHB", "Dogbert", "Asok", "Ted", "Alice", "Wally"};
+  vector<string> names = {"Dilbert", "PHB",   "Dogbert", "Asok",
+                          "Ted",     "Alice", "Wally"};
 
-	cout << "Vector before sort()\n";
-	for (auto name : names)
-		cout << name << ", ";
-	cout << endl << endl;
+  cout << "Vector before sort()\n";
+  for (auto name : names) cout << name << ", ";
+  cout << endl << endl;
 
-	sort(begin(names), end(names), less<string>());
+  sort(begin(names), end(names), less<string>());
 
-	cout << "Vector after sort() with std::less\n";
-	for (auto name : names)
-		cout << name << ", ";
-	cout << endl;
+  cout << "Vector after sort() with std::less\n";
+  for (auto name : names) cout << name << ", ";
+  cout << endl;
 }

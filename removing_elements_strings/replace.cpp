@@ -1,14 +1,14 @@
-#include <string>
 #include <iostream>
+#include <string>
 
 using namespace std;
 
 int main() {
-	string str{ "Say Hello" };
-	cout << "str = " << str << endl;
-	
-	auto gdx = str.find('H');
-	str.replace(gdx, 5, "Goodbye");
-	
-	cout << "str = " << str << endl;
+  string str{"Say Hello"};
+  cout << "str = " << str << endl;
+
+  auto gdx = str.find('H');
+  str.replace(gdx, 5, "Goodbye");
+
+  cout << "str = " << str << endl;
 }

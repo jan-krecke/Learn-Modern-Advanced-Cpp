@@ -4,22 +4,21 @@
 using namespace std;
 
 int main() {
-	vector<int> vec;                        // Create an empty vector
+  vector<int> vec;  // Create an empty vector
 
-	cout << "Vector has " << vec.size() << " elements\n";
-	
-	cout << "Calling back_inserter()\n";
-	auto it = back_inserter(vec);           // Get an insert iterator for vec
+  cout << "Vector has " << vec.size() << " elements\n";
 
-	// Assign to this iterator
-	cout << "Assigning to insert iterator\n";
-	*it = 99;                               // Calls vec.push_back(99)
-	*it = 88;                               // Calls vec.push_back(88)
+  cout << "Calling back_inserter()\n";
+  auto it = back_inserter(vec);  // Get an insert iterator for vec
 
-	// Vector elements are now {99, 88}
-	cout << "Vector has " << vec.size() << " elements: ";
-	
-	for (auto v: vec)
-		cout << v << ", ";
-	cout << endl;
+  // Assign to this iterator
+  cout << "Assigning to insert iterator\n";
+  *it = 99;  // Calls vec.push_back(99)
+  *it = 88;  // Calls vec.push_back(88)
+
+  // Vector elements are now {99, 88}
+  cout << "Vector has " << vec.size() << " elements: ";
+
+  for (auto v : vec) cout << v << ", ";
+  cout << endl;
 }

@@ -5,30 +5,24 @@ using namespace std;
 
 struct Son;
 
-struct Father{
-  ~Father(){
-    cout << "Father destructor" << endl;
-  }
-  
-  void setSon(const shared_ptr<Son>& s) {
-    mySon = s;
-  }
+struct Father {
+  ~Father() { cout << "Father destructor" << endl; }
+
+  void setSon(const shared_ptr<Son>& s) { mySon = s; }
 
   shared_ptr<const Son> mySon;
 };
 
-struct Son{
-  Son(const shared_ptr<Father>& m): myFather(m) {}
-  
-  ~Son(){
-    cout << "Son destructor" << endl;
-  }
-  
+struct Son {
+  Son(const shared_ptr<Father>& m) : myFather(m) {}
+
+  ~Son() { cout << "Son destructor" << endl; }
+
   shared_ptr<const Father> myFather;
-  //weak_ptr<const Father> myFather;
+  // weak_ptr<const Father> myFather;
 };
 
-int main(){
+int main() {
   cout << endl;
   {
     auto father = make_shared<Father>();

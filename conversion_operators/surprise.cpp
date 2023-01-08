@@ -3,6 +3,6 @@
 using namespace std;
 
 int main() {
-	int i = 99;
-	cin << i;                                                    // This compiles!?
+  int i = 99;
+  cin << i;  // This compiles!?
 }

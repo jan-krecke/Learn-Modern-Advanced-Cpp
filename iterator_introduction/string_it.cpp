@@ -4,11 +4,11 @@
 using namespace std;
 
 int main() {
-	string str{"Hello"};
-	string::iterator it = str.begin();                // Start of string
+  string str{"Hello"};
+  string::iterator it = str.begin();  // Start of string
 
-	while (it != str.end()) {                         // Gone past last element?
-		cout << *it << ", ";
-		++it;
-	}
+  while (it != str.end()) {  // Gone past last element?
+    cout << *it << ", ";
+    ++it;
+  }
 }
