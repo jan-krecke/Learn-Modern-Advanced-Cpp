@@ -6,7 +6,8 @@
 class URL {
  public:
   URL(const std::string& protocol, const std::string& resource);
-  std::string display();
+  URL(const URL& other);
+  const std::string display();
 
  private:
   std::string protocol_;
