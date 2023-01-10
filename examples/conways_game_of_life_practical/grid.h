@@ -18,11 +18,14 @@ class grid {
   // Create a cell at (row, column)
   void create(int row, int column);
 
+  // Compare grid to another
+  bool is_equal(grid& other);
+
   // Draw all the cells
   void draw();
 
   // Populate the grid with cells, at random
-  void randomize();
+  void randomize(int rand_factor);
 
   // Will the cell at (row, column) survive to the next generation?
   bool will_survive(int row, int column);
