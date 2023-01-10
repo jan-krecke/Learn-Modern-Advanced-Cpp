@@ -3,6 +3,16 @@
 // Create a cell at (row, column)
 void grid::create(int row, int column) { cells[row][column].create(); }
 
+// Check if grid is equal to another
+bool grid::is_equal(grid& other) {
+  for (int i = 0; i < rowmax * colmax; i++) {
+    if (cells[i] != other.cells[i]) {
+      return false;
+    }
+  }
+  return true;
+}
+
 // Draw all the cells, including the border
 void grid::draw() {
   // ANSI control command
@@ -18,9 +28,8 @@ void grid::draw() {
 }
 
 // Populate the grid with cells, at random
-void grid::randomize() {
-  const int factor = 5;
-  const int cutoff = RAND_MAX / factor;
+void grid::randomize(int rand_factor) {
+  const int cutoff = RAND_MAX / rand_factor;
   time_t now;
   time(&now);
   // srand(now);
