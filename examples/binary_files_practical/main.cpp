@@ -3,7 +3,11 @@
 #include "bitmap.h"
 
 
-int main() {
+<<<<<<< HEAD
+
+== == == =
+>>>>>>> 1e14270da8b1803dfbc2bc6b641770881e80ea56
+             int main() {
   const int width{800};
   const int height{600};
   const int x_mid = width / 2;
@@ -62,4 +66,8 @@ int main() {
     std::cout << "Succeeded\n";
   else
     std::cout << "Failed\n";
+<<<<<<< HEAD
 }
+== == == =
+}
+>>>>>>> 1e14270da8b1803dfbc2bc6b641770881e80ea56
