@@ -26,8 +26,4 @@ int main() {
     cout << "Middle element is " << *mid;
     cout << " with index " << distance(str.begin(), mid) << endl;
   }
-<<<<<<< HEAD
 }
-== == == =
-}
->>>>>>> 1e14270da8b1803dfbc2bc6b641770881e80ea56
